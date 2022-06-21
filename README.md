@@ -1,6 +1,6 @@
 # **Boisterous Baboons Portfolio Site**
 
-This portfolio website allows users to learn more about the members of Boisterous Baboons, such as about each member's education, work experience, projects, skills, hobbies, and travel experiences.
+Our team's portfolio website allows users to learn more about the members of Boisterous Baboons, such as about each member's education, work experience, projects, skills, hobbies, and travel experiences.
 
 ## Our Stack
 
