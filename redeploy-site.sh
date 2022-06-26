@@ -6,5 +6,6 @@ git fetch && git reset origin/main --hard
 virtualenv env
 source env/bin/activate
 pip install -r requirements.txt
-clear
-tmux new 'flask run --host=0.0.0.0' 
+tmux new -d 'source env/bin/activate && flask run --host=0.0.0.0'
+cd
+clear 
