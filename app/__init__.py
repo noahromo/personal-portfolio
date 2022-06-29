@@ -100,6 +100,11 @@ def visited(member):
     return person
 
 
+@app.route('/timeline')
+def timeline():
+    return render_template('timeline.html', title="Timeline", timeline=get_time_line_post())
+
+
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
     name = request.form['name']
@@ -120,11 +125,13 @@ def get_time_line_post():
     }
 
 
-@app.route('/api/timeline_post', methods=['DELETE'])
-def delete_time_line_post():
+@app.route('/api/timeline_post/<id>', methods=['DELETE'])
+def delete_time_line_post(id):
     try:
-        qry = TimelinePost.delete().where(TimelinePost.name=="Test")
+        qry = TimelinePost.delete().where(TimelinePost.id==id)
         qry.execute()
-        return "Delet was a success!"
+        test_qry = TimelinePost.delete().where(TimelinePost.name=="Test")
+        test_qry.execute()
+        return "Delete was a success!"
     except:
         return "There was a problem deleting that post..."
