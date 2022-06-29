@@ -46,7 +46,7 @@
 
         const form_data = new FormData(form);
 
-        fetch('http://localhost:5000/api/timeline_post', {
+        fetch('/api/timeline_post', {
             method: 'POST', 
             body: form_data
         }).then(() => {
