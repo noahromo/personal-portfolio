@@ -97,7 +97,7 @@ def member(member):
 @app.route('/visited/<member>')
 def visited(member):
     person = team[member]
-    return person
+    return {'visited': person['visited'], 'api_key': os.getenv('API_KEY')}
 
 
 @app.route('/timeline')
