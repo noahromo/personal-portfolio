@@ -1,3 +1,3 @@
 #!/bin/bash
 
-PWD/env/bin/python -m unittest discover -v tests/
+/root/personal-portfolio/env/bin/python -m unittest discover -v tests/
