@@ -1,8 +1,8 @@
-# **Boisterous Baboons Portfolio Site**
+# **Noah Romo's Personal Portfolio Site**
 
-This portfolio website allows users to learn more about the members of Boisterous Baboons, such as about each member's education, work experience, projects, skills, hobbies, and travel experiences.
+Tailoring my portfolio website to myself after forking it from my team's portfolio project that won the MLH Fellowhip Hackathon. Allows users to learn more about me, such as my education, work experience, personal projects, technical skills, hobbies, and travel experiences.
 
-## Our Stack
+## Tech Stack
 
 This website was built using HTML, Jinja2, CSS, and Javascript on the front-end, and the back-end was built using Python and Flask. We also used the particles.js and leaflet.js frameworks to add some of the design features.
 
@@ -12,9 +12,11 @@ This website was built using HTML, Jinja2, CSS, and Javascript on the front-end,
 
 ## Getting Started
 
-Currently you can only see the website on a local server (It is recommended to use the VSCode IDE).
+If you would like to visit the website, you can click this link here [Personal Portfolio](http://noahromo.duckdns.org:5000/)
 
-The first step is to clone the repository onto your local machine:
+If you would rather see the website on a local server follow these next steps (It is recommended to use the VSCode IDE).
+
+First, clone the repository onto your local machine:
 ```bash
 $ git clone https://github.com/MLH-Fellowship/project-boisterous-baboons.git
 ```
