@@ -2,9 +2,5 @@
 
 cd personal-portfolio
 git fetch && git reset origin/main --hard
-virtualenv env
-source env/bin/activate
-pip install -r requirements.txt
-systemctl restart myportfolio
-cd
-clear
+docker compose -f docker-compose.prod.yml down
+docker compose -f docker-compose.prod.yml up -d --build
