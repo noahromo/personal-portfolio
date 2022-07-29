@@ -37,7 +37,6 @@ class AppTestCase(unittest.TestCase):
         assert response.status_code == 200
         assert response.is_json
         json = response.get_json()
-        # html = response.get_data(as_text = True)
         assert json.get("name") == "Noah Romo"  
         assert json.get("email") == "noahromo@test.com"
         assert json.get("content") == "This is a test."
@@ -46,10 +45,6 @@ class AppTestCase(unittest.TestCase):
         assert response.status_code == 200
         assert response.is_json
         json = response.get_json()
-        html = response.get_data(as_text = True)
-        assert '"name": "Noah Romo"' in html
-        assert '"email": "noahromo@test.com"' in html
-        assert '"content": "This is a test."' in html
         assert len(json["timeline_posts"]) == 1
         # Timeline Page
         response = self.client.get("/timeline")
