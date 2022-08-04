@@ -76,7 +76,7 @@ team = {'juan': {"firstname": "Juan's",
 
 @app.route('/')
 def index():
-    return render_template('home.html', title="MLH Fellow", url=os.getenv("URL"))
+    return render_template('home.html', title="Portfolio", url=os.getenv("URL"))
 
 
 @app.route('/member/<member>')
