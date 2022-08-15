@@ -33,6 +33,7 @@ class TimelinePost(Model):
 
 mydb.connect()
 mydb.create_tables([TimelinePost])
+mydb.close()
 
 team = {'juan': {"firstname": "Juan's",
                  "name": "Juan Acosta", 
