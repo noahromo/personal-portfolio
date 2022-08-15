@@ -33,7 +33,8 @@ class TimelinePost(Model):
 
 mydb.connect()
 mydb.create_tables([TimelinePost])
-mydb.close()
+if not (os.getenv("TESTING") == "true"):
+    mydb.close()
 
 team = {'juan': {"firstname": "Juan's",
                  "name": "Juan Acosta", 
