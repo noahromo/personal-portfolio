@@ -1,10 +1,10 @@
 # **Noah Romo's Personal Portfolio Site**
 
-Tailoring my portfolio website to myself after forking it from my team's portfolio project that won the MLH Fellowhip Hackathon. Allows users to learn more about me, such as my education, work experience, personal projects, technical skills, hobbies, and travel experiences.
+Created my portfolio website based off of my team's portfolio project that won the MLH Fellowhip Hackathon. Allows users to learn more about me, such as my education, work experience, personal projects, technical skills, hobbies, and travel experiences.
 
 ## Tech Stack
 
-This website was built using HTML, Jinja2, CSS, and Javascript on the front-end, and the back-end was built using Python and Flask. We also used the particles.js and leaflet.js frameworks to add some of the design features.
+This web application was built using HTML, Jinja2, CSS, and Javascript on the front-end, and the back-end was built using Flask. I also used the particles.js and leaflet.js frameworks to add some of the design features. The production environment was built using a Virtual Private Server, with a MySQL database and secure Nginx web server, containerized with Docker.
 
 ## Demo
 
@@ -12,13 +12,13 @@ This website was built using HTML, Jinja2, CSS, and Javascript on the front-end,
 
 ## Getting Started
 
-If you would like to visit the website, you can click this link here [Personal Portfolio](http://noahromo.duckdns.org:5000/)
+If you would like to visit the website, you can click this link here [Personal Portfolio](http://noahromo.duckdns.org)
 
-If you would rather see the website on a local server follow these next steps (It is recommended to use the VSCode IDE).
+If you would like to see the website on your local computer, follow these next steps (It is recommended to use the VSCode IDE).
 
 First, clone the repository onto your local machine:
 ```bash
-$ git clone https://github.com/MLH-Fellowship/project-boisterous-baboons.git
+$ git clone https://github.com/noahromo/personal-portfolio.git
 ```
 
 Now follow the installation and usage steps below to render the website!
